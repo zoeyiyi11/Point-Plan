@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- In order for the logo to appear as the icon image-->
+		<link rel="icon" href="http://i.imgur.com/48gdUvi.png">
+		<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   	<title>Point&Plan</title>
+   	<!-- Bootstrap -->
+   	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+   	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<!--<div class="logo">
+	<img src="http://i.imgur.com/48gdUvi.png" alt="logo" style="width:150px; height:150px;">-->
+	</div>
+	<div class="landing-page">
+		<body>
+			<div class="white-overlay-background">
+				<div data-role="page" id="pageone">
+					<div class="firstheader">
+						<h1> Welcome to Point & Plan <img src="http://i.imgur.com/48gdUvi.png" alt="logo" style="width: 80px; height:80px;"></h1>
+						<h2>Please choose one of the following</h2>
+					</div>
+					<div class="wrap">
+						<select onchange="location = this.options[this.selectedIndex].value">
+						  <!--fixed bug which previously caused website to crash-->
+						  <option value="#-" data-transition="slide">-</option>
+						  <option value="#Student" data-transition="slide">Student</option>
+						  <option value="#Professor" data-transition="slide">Professor</option>
+						  <option value="#Administrator" data-transition="slide">Administrator</option>
+						</select>
+					</div>
+					<!--div data-role="main" class="ui-content">
+			    	 <p>Click on the link to see the slide effect.</p>
+			    	 <a href="#pagetwo" data-transition="slide">Slide to Page Two</a>
+			  	</div-->
+				</div>
+
+				<div data-role="page" id="Student">
+					<h1>Student</h1>
+					<form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1"></label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1"></label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					  </div>
+					  
+					  <button type="submit" class="btn btn-default">Login</button>
+					</form>
+				</div>
+
+				<div data-role="page" id="Professor">
+					<h1>Professor</h1>
+					<form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1"></label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1"></label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					  </div>
+					  
+					  <button type="submit" class="btn btn-default">Login</button>
+					</form>
+				</div>
+
+				<div data-role="page" id="Administrator">
+					<h1>Administrator</h1>
+					<form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1"></label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1"></label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					  </div>
+					  
+					  <button type="submit" class="btn btn-default">Login</button>
+					</form>
+				</div>
+
+				<!-- jQuery/JavaScript -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				</div>
+			</div>
+		</body>
+	</div>
+</html>
